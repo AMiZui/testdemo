@@ -44,6 +44,18 @@
             虚拟仓库(暂存区) => github(远程仓库)
                     1.授权  生成ssh密匙
                         ssh-keygen -t rsa -C "注册github所使用的邮箱"
+                    windows电脑查找文件  我的电脑 => 用户 => 用户名文件夹 => .ssh后缀的隐藏文件 => .pub后缀的文件(存有密匙) 在编辑器内打开
+                    2.github账户配置密匙
+                        github头像 => settings => SSH and GPG keys => new SSH key 创建新密匙
+                    3.向远程仓库提交
+                        git remote add origin 远程仓库网站名
+                        git push -u origin master
+                        提交过程可能会显示输入用户名密码
+                    4. 从远程仓库克隆项目到本地
+                         git clone 远程仓库网站名
+                    5.从远程仓库更新代码到本地
+                        git pull
+                    
         
         */
     </script>
